@@ -26,6 +26,26 @@ The primary user-view features an interactive Monday-Sunday calendar of the curr
   - [ ] Changes on Web app show up in Native App
   
 
+## Mvps
+
+- [ ] New account creation, login, and guest/demo login
+- [ ] A production README
+- [ ] Hosting on Heroku
+- [ ] Web App
+  - [ ] Users can create/edit/delete "todo sticky notes" (notes)
+  - [ ] Users can move notes to week planner
+  - [ ] Users can move notes to "finished" area
+  - [ ] Notes have tags/color to organize by project
+- [ ] React Native
+  - [ ] Users can create/edit/delete "todo sticky notes" (notes)
+  - [ ] Users can move notes to week planner
+  - [ ] Users can move notes to "finished" area
+  - [ ] Notes have tags/color to organize by project
+- [ ] Backend/Integration
+  - [ ] Changes in Native app show up on Web App
+  - [ ] Changes on Web app show up in Native App
+  
+
 Weekend plan:
 
 Finalize Proposal
