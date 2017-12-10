@@ -35,12 +35,12 @@ Over the Weekend:
 Monday-Day 1:
 
 - Web: Hosted on Heroku
-- Web: Splash Page Complete
-- Web/Native: User Auth Complete
-- Web/Native: Homepage - Basic Layout Complete
+- Web: Splash Page Up
+- Web/Native: User Auth Cycle Complete
 
 Tuesday-Day 2:
 
+- Web/Native: Homepage - Basic Layout Complete
 - Web/Native: Homepage - Left Responsive SideMenu: Unscheduled Todos
 - Web/Native: CRUD, drag and drop todos
 
@@ -51,32 +51,37 @@ Wedensday-Day 3:
 
 Thursday-Day 4:
 
-- 
--
+- Web/Native: Homepage - User Profile
+- Web: User can adjust work hours by week
 
 Friday-Day 5:
 
--
--
-
+- Web/Native: Homepage - Filter showing todos by tag 
+- Web: 
 
 Saturday-Day 6:
 
--
--
-
+- Web/Native: Finalize styling
+- Clean code for any `debugger`s and `console.log`s 
+- Finish Production README
 
 Sunday-Day 7:
 
--
--
+- Web: Hosted on private domain
+- Finalize everything, final tweaks, fix any lingering bugs
 
 
 ### Database schema
 
 
+
 ### Routes
 
+api/users/ - GET, POST
+api/users/:id - GET, PATCH, DELETE
+
+api/todos/ - GET, POST
+api/todos/:id - GET, PATCH, DELETE
 
 ### Wireframes
 
