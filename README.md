@@ -1,24 +1,33 @@
-# README
+Do Date is a new envisioning of the to do list application for aggressive. In contrast to the traditional list-based to-do app, Do Date allows the user to organize their to-do items for an entire week. The primary user view interacts with a M-F calendar for the week where they are able to organize their to-dos. New to-dos are created from a new to-do form, where they can then be immediately placed on the schedule or onto a responsive side-page that holds unscheduled items.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+Weekend plan:
 
-* Ruby version
+Finalize Proposal
 
-* System dependencies
+-database schema 
+-routes
+-wireframes
+-basic rails app
+-tasks divided up
+-implementation schedule
+-mvps
 
-* Configuration
 
-* Database creation
 
-* Database initialization
+Full-stack
 
-* How to run the test suite
+Postgresql
+Rails
+React/Redux
 
-* Services (job queues, cache servers, search engines, etc.)
+plus
 
-* Deployment instructions
+React Native for mobile
 
-* ...
+
+Database Schema
+
+user table
+
+to-do-items table
