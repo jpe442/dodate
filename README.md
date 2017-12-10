@@ -1,4 +1,8 @@
-Do Date is a new envisioning of the to do list application for aggressive. In contrast to the traditional list-based to-do app, Do Date allows the user to organize their to-do items for an entire week. The primary user view interacts with a M-F calendar for the week where they are able to organize their to-dos. New to-dos are created from a new to-do form, where they can then be immediately placed on the schedule or onto a responsive side-page that holds unscheduled items.
+About
+
+Do Date is a new envisioning of the todo list application loosely inspired by Kanban boards. In contrast to the traditional list-based todo app, Do Date allows the user to organize their todo items across the work week. This way the user can easily plot out 'when' is the ideal time to work based on 'what' the work is and 'how long' the work might take. 
+
+The primary user-view features an interactive Monday-Sunday calendar for the current week where users organize their todos by dragging them around and dropping them where they would like. New todos are created from a new todo form, where they can then be immediately placed onto a responsive side-page that holds unscheduled items, or even directly into a desired open part of the calendar.
 
 
 Weekend plan:
@@ -12,7 +16,6 @@ Finalize Proposal
 -tasks divided up
 -implementation schedule
 -mvps
-
 
 
 Full-stack
