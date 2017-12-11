@@ -25,13 +25,13 @@ The primary user-view features an interactive Monday-Sunday calendar of the week
 
 ## Implementation Schedule
 
-Division of Labor by First Priority:
+#### Division of Labor by First Priority:
 
-Josh - React/Redux Component Architecture - Backend
-Niall - UX: Frontend Layout, Ergonomics, and Styling
+- Josh - React/Redux Component Architecture - Backend
+- Niall - UX: Frontend Layout, Ergonomics, and Styling
 Kevin - React/Redux Native Mobile Frontend Components
 
-Over the Weekend:
+#### Over the Weekend:
 
 - Finalize proposal (including division of labor and implementation schedule)
 - Initialize repo, create rails app with DB 
@@ -39,43 +39,43 @@ Over the Weekend:
 - Research Material UI
 - Finish React Native Demo
 
-Monday-Day 1:
+#### Monday-Day 1:
 
 - Web: Hosted on Heroku
 - Web: Splash Page - Up with SignUp/Login portals
 - Web/Native: User Auth Back-to-Front Cycle Complete: Login modal
 - Web: Sign-up form
 
-Tuesday-Day 2:
+#### Tuesday-Day 2:
 
 - Web/Native: Homepage - Basic Layout Complete
 - Web/Native: Homepage - Left Responsive SideMenu: Unscheduled Todos
 - Web/Native: Homepage - Unschedules
 - Web/Native: Homepage - CRUD, drag and drop todos
 
-Wedensday-Day 3:
+#### Wedensday-Day 3:
 
 - Web/Native: Homepage - Calendar Times/Calendar Configuration Persists
 - Web/Native: Homepage - Right Responsive SideMenu: Done Todos
 
-Thursday-Day 4:
+#### Thursday-Day 4:
 
 - Web/Native: Homepage - User Profile
 - Web: Homepage - User can adjust work hours by week
 - Web: Homepage - Done Todos organize by a)order of completion(newest first, oldest first) or b)tag
 
-Friday-Day 5:
+#### Friday-Day 5:
 
 - Web/Native: Homepage - Filter viewable todos by tag
 - Web: Archivability of Done todos
 
-Saturday-Day 6:
+#### Saturday-Day 6:
 
 - Web/Native: Finalize styling
 - Web: Clean code for any `debugger`s and `console.log`s 
 - Start Production README
 
-Sunday-Day 7:
+#### Sunday-Day 7:
 
 - Web: Host on private domain
 - Finalize everything, final adjustments/tweaks, address any lingering bugs
@@ -83,12 +83,12 @@ Sunday-Day 7:
 
 ## Database schema
 
-users: 
+#### users: 
 -email:string:required:index
 -password_digest:string:required:index
 -session_token:string:required:index
 
-todos: 
+#### todos: 
 -task:string:required:index
 -notes:text
 -tag:string:required:index
