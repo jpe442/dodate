@@ -1,6 +1,6 @@
 ## About
 
-Do Date is a new envisioning of the todo application loosely inspired by Kanban boards. In contrast to the traditional list-based todo app, Do Date allows the user to organize their todo items across the work week. This way the user can easily plot out 'when' the ideal time would be to work based on 'what' the work is and 'how long' the work might take. 
+Do Date is a new envisioning of the todo application loosely inspired by Kanban boards. In contrast to the traditional simple list-based todo app, Do Date allows the user to organize their todo items across the work week. This way the user can easily plot out 'when' the ideal time would be to work based on 'what' the work is and 'how long' the work might take. 
 
 The primary user-view features an interactive Monday-Sunday calendar of the week from which users organize their todos by simply dragging them around and dropping them where they would like on the calendar. New todos are created from a new-todo form, where they can then be immediately placed onto the left responsive side-menu that holds unscheduled items, or directly onto an open space of the calendar. Once the user has completed the task, they move the item to the "Done" right responsive side-menu. Overall, this procedure provides the user an intutive left-to-right workflow: left-unscheduled/center-scheduled/right-done. 
 
@@ -25,10 +25,17 @@ The primary user-view features an interactive Monday-Sunday calendar of the week
 
 ## Implementation Schedule
 
+Division of Labor:
+
+Josh - React/Redux Component Architecture - Backend
+Niall - UX: Frontend Layout, Ergonomics, and Styling
+Kevin - React/Redux Native
+
 Over the Weekend:
 
 - Finalize proposal (including division of labor and implementation schedule)
-- Initialize repo, create rails app with DB, get git team workflow started
+- Initialize repo, create rails app with DB 
+- Begin/test git team workflow started
 - Research Material UI
 - Finish React Native Demo
 
@@ -36,7 +43,8 @@ Monday-Day 1:
 
 - Web: Hosted on Heroku
 - Web: Splash Page Up
-- Web/Native: User Auth Cycle Complete
+- Web/Native: User Auth Back-to-Front Cycle Complete: Login modal
+- Web: Sign-up form
 
 Tuesday-Day 2:
 
@@ -46,43 +54,76 @@ Tuesday-Day 2:
 
 Wedensday-Day 3:
 
-- Web/Native: Homepage - Calendar Times
+- Web/Native: Homepage - Calendar Times/Calendar Configuration Persists
 - Web/Native: Homepage - Right Responsive SideMenu: Done Todos
 
 Thursday-Day 4:
 
 - Web/Native: Homepage - User Profile
 - Web: User can adjust work hours by week
+- Web: Done Todos organize by a)order of creation(newest first, last first), b)tag
 
 Friday-Day 5:
 
-- Web/Native: Homepage - Filter showing todos by tag 
-- Web: 
+- Web/Native: Homepage - Filter viewable todos by tag
+- Web: Archivability of Done todos
 
 Saturday-Day 6:
 
 - Web/Native: Finalize styling
 - Clean code for any `debugger`s and `console.log`s 
-- Finish Production README
+- Start Production README
 
 Sunday-Day 7:
 
-- Web: Hosted on private domain
-- Finalize everything, final tweaks, fix any lingering bugs
+- Web: Host on private domain
+- Finalize everything, final adjustments/tweaks, address any lingering bugs
 
 
-### Database schema
+## Database schema
+
+users: 
+-email:string:required:index
+-password_digest:string:required:index
+-session_token:string:required:index
+
+todos: 
+-task:string:required:index
+-notes:text
+-tag:string:required:index
+-user_id:integer:index
+-workflow_pos:string:required
+-estimated_time_to_completion:integer
+-start-time:integer:index
+-end-time:integer:index
 
 
+## Routes
 
-### Routes
+#### users
 
-api/users/ - GET, POST
-api/users/:id - GET, PATCH, DELETE
+- POST api/users/ - creates a new user
+- GET api/users/:id - returns a user
+- PATCH api/users/:id - updates a user's information
+- DELETE api/users/:id - deletes a user
 
-api/todos/ - GET, POST
-api/todos/:id - GET, PATCH, DELETE
+#### session
 
-### Wireframes
+- POST api/session/ - creates a new session(logs a user in)
+- DELETE api/session/:id - deletes a session(logs a user out)
+
+#### todos
+
+GET api/users/:user_id/todos - returns all a users todos
+POST api/users/:user_id/todos/ - creates a new todo for a user
+
+GET api/todos/:id - returns a todo
+PATCH api/todos/:id - updates a todo
+DELETE api/todos/:id - deletes a todo
+
+
+## Wireframes
+
+
 
 
