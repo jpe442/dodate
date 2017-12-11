@@ -29,7 +29,7 @@ The primary user-view features an interactive Monday-Sunday calendar of the week
 
 - Josh - React/Redux Component Architecture - Backend
 - Niall - UX: Frontend Layout, Ergonomics, and Styling
-Kevin - React/Redux Native Mobile Frontend Components
+- Kevin - React/Redux Native Mobile Frontend Components
 
 #### Over the Weekend:
 
@@ -84,11 +84,13 @@ Kevin - React/Redux Native Mobile Frontend Components
 ## Database schema
 
 #### users: 
+
 -email:string:required:index
 -password_digest:string:required:index
 -session_token:string:required:index
 
-#### todos: 
+#### todos:
+
 -task:string:required:index
 -notes:text
 -tag:string:required:index
