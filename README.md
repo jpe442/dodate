@@ -2,7 +2,7 @@
 
 Do Date is a new envisioning of the todo application loosely inspired by Kanban boards. In contrast to the traditional simple list-based todo app, Do Date allows the user to organize their todo items across the work week. This way the user can easily plot out 'when' the ideal time would be to work based on 'what' the work is and 'how long' the work might take. 
 
-The primary user-view features an interactive Monday-Sunday calendar of the week from which users organize their todos by simply dragging them around and dropping them where they would like on the calendar. New todos are created from a new-todo form, where they can then be immediately placed onto the left responsive side-menu that holds unscheduled items, or directly onto an open space of the calendar. Once the user has completed the task, they move the item to the "Done" right responsive side-menu. Overall, this procedure provides the user an intutive left-to-right workflow: left-unscheduled/center-scheduled/right-done. 
+The primary user-view features an interactive Monday-Sunday calendar of the week from which users organize their todos by simply dragging them around and dropping them where they would like on the calendar. New todos are created from a new-todo form, where they can then be immediately placed onto the left responsive side-menu that holds unscheduled items, or directly onto an open space of the calendar. Once the user has completed the task, they move the item to the "Done" right responsive side-menu. Overall, this procedure provides the user an intutive left-to-right workflow: left/unscheduled-->center/scheduled-->right/done. 
 
 ## Mvps
 
@@ -25,11 +25,11 @@ The primary user-view features an interactive Monday-Sunday calendar of the week
 
 ## Implementation Schedule
 
-Division of Labor:
+Division of Labor by First Priority:
 
 Josh - React/Redux Component Architecture - Backend
 Niall - UX: Frontend Layout, Ergonomics, and Styling
-Kevin - React/Redux Native
+Kevin - React/Redux Native Mobile Frontend Components
 
 Over the Weekend:
 
@@ -42,7 +42,7 @@ Over the Weekend:
 Monday-Day 1:
 
 - Web: Hosted on Heroku
-- Web: Splash Page Up
+- Web: Splash Page - Up with SignUp/Login portals
 - Web/Native: User Auth Back-to-Front Cycle Complete: Login modal
 - Web: Sign-up form
 
@@ -50,7 +50,8 @@ Tuesday-Day 2:
 
 - Web/Native: Homepage - Basic Layout Complete
 - Web/Native: Homepage - Left Responsive SideMenu: Unscheduled Todos
-- Web/Native: CRUD, drag and drop todos
+- Web/Native: Homepage - Unschedules
+- Web/Native: Homepage - CRUD, drag and drop todos
 
 Wedensday-Day 3:
 
@@ -60,8 +61,8 @@ Wedensday-Day 3:
 Thursday-Day 4:
 
 - Web/Native: Homepage - User Profile
-- Web: User can adjust work hours by week
-- Web: Done Todos organize by a)order of creation(newest first, last first), b)tag
+- Web: Homepage - User can adjust work hours by week
+- Web: Homepage - Done Todos organize by a)order of completion(newest first, oldest first) or b)tag
 
 Friday-Day 5:
 
@@ -71,7 +72,7 @@ Friday-Day 5:
 Saturday-Day 6:
 
 - Web/Native: Finalize styling
-- Clean code for any `debugger`s and `console.log`s 
+- Web: Clean code for any `debugger`s and `console.log`s 
 - Start Production README
 
 Sunday-Day 7:
@@ -93,7 +94,7 @@ todos:
 -tag:string:required:index
 -user_id:integer:index
 -workflow_pos:string:required
--estimated_time_to_completion:integer
+-estimated_time_to_completion:integer:required:index
 -start-time:integer:index
 -end-time:integer:index
 
