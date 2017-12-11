@@ -127,6 +127,12 @@ The primary user-view features an interactive Monday-Sunday calendar of the week
 
 ## Wireframes
 
+# Main Page
+![](https://github.com/jpe442/dodate/blob/master/app/assets/images/main_page.jpg)
 
+# To Do Creation Sidebar 
+![](https://github.com/jpe442/dodate/blob/master/app/assets/images/to_do_creation_sidebar.jpg)
 
+# Weekend Bottom Bar
+![](https://github.com/jpe442/dodate/blob/master/app/assets/images/weekend_bottom_bar.jpg)
 
