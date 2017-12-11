@@ -115,12 +115,12 @@ todos:
 
 #### todos
 
-GET api/users/:user_id/todos - returns all a users todos
-POST api/users/:user_id/todos/ - creates a new todo for a user
+- GET api/users/:user_id/todos - returns all a users todos
+- POST api/users/:user_id/todos/ - creates a new todo for a user
 
-GET api/todos/:id - returns a todo
-PATCH api/todos/:id - updates a todo
-DELETE api/todos/:id - deletes a todo
+- GET api/todos/:id - returns a todo
+- PATCH api/todos/:id - updates a todo
+- DELETE api/todos/:id - deletes a todo
 
 
 ## Wireframes
