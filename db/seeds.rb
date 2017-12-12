@@ -8,7 +8,7 @@
 User.destroy_all
 
 user1 = User.create!(
-  :password => "password",
+  :password => "password", 
   :email => "socrat8s@gmail.com"
 )
 
