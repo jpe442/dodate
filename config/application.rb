@@ -9,7 +9,7 @@ Bundler.require(*Rails.groups)
 module Dodate
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
-    config.load_defaults 5.1
+    # config.load_defaults 5.1
     config.action_dispatch.default_headers = {
     'Access-Control-Allow-Origin' => 'https://dodateweb.herokuapp.com',
     'Access-Control-Request-Method' => %w{GET DELETE UPDATE POST OPTIONS}.join(",")
