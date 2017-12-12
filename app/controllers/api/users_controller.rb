@@ -11,6 +11,12 @@ class Api::UsersController < ApplicationController
     end
   end
 
+  def destroy
+    @user = User.find(params[:id])
+    @user.destroy!
+    render "api/users/show"
+  end
+
   def index
     @users = User.all
     render json: @users
