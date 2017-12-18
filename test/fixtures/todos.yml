@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  task: MyString
+  etc: 1
+  workflow_pos: MyString
+  notes: MyText
+  tag: MyString
+  user_id: 1
+  start_time: 2017-12-18
+  end_time: 2017-12-18
+
+two:
+  task: MyString
+  etc: 1
+  workflow_pos: MyString
+  notes: MyText
+  tag: MyString
+  user_id: 1
+  start_time: 2017-12-18
+  end_time: 2017-12-18
