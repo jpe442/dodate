@@ -35,6 +35,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'better_errors'
 gem 'pry-rails'
 gem 'jquery-rails'
+gem 'rack-cors', :require => 'rack/cors'
 gem 'annotate'
 gem 'binding_of_caller'
 group :development, :test do
