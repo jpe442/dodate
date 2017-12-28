@@ -5,6 +5,8 @@ class User < ApplicationRecord
 
   before_validation :ensure_session_token
 
+  has_many :todos
+
   attr_reader :password
 
   def self.find_by_credentials(email, password)
