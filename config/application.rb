@@ -11,24 +11,25 @@ module Dodate
     # Initialize configuration defaults for originally generated Rails version.
     # config.load_defaults 5.1
     
-
-    config.action_dispatch.default_headers = {
-    'Access-Control-Allow-Origin' => '*',
-    'Access-Control-Allow-Methods' => %w{GET POST OPTIONS PATCH PUT DELETE}.join(","),
-    # 'Access-Control-Allow-Methods' => '*',
-    # 'Access-Control-Request-Method' => '*',
-    'Access-Control-Request-Method' => %w{GET POST OPTIONS PATCH PUT DELETE}.join(","),
-    'Access-Control-Allow-Headers' => 'Origin, X-Requested-With, Content-Type, Accept, Authorization'
-  }
-
-  config.middleware.insert_before 0, Rack::Cors do
+    config.middleware.insert_before 0, Rack::Cors do
       allow do
         origins '*'
         resource '*', :headers => :any, :methods => [:get, :post, :options, :patch, :delete, :put]
       end
     end
 
-  config.load_defaults 5.1
+    # config.action_dispatch.default_headers = {
+    #   'Access-Control-Allow-Origin' => '*',
+    #   'Access-Control-Allow-Methods' => %w{GET POST OPTIONS PATCH PUT DELETE}.join(","),
+    #   # 'Access-Control-Allow-Methods' => '*',
+    #   # 'Access-Control-Request-Method' => '*',
+    #   'Access-Control-Request-Method' => %w{GET POST OPTIONS PATCH PUT DELETE}.join(","),
+    #   'Access-Control-Allow-Headers' => 'Origin, X-Requested-With, Content-Type, Accept, Authorization'
+    # }
+
+  
+
+  # config.load_defaults 5.1
 
 
     # Settings in config/environments/* take precedence over those specified here.
