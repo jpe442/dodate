@@ -13,18 +13,21 @@ module Dodate
     
     config.middleware.insert_before 0, Rack::Cors do
       allow do
-        origins '*'
-        resource '*', :headers => :any, :methods => [:get, :post, :options, :patch, :delete, :put]
+        origins "localhost:8000"
+        resource '*', :headers => :any, :credentials => true, :methods => [:get, :post, :options, :patch, :delete, :put]
       end
     end
 
     # config.action_dispatch.default_headers = {
-    #   'Access-Control-Allow-Origin' => '*',
+    #   'Access-Control-Allow-Origin' => 'null',
     #   'Access-Control-Allow-Methods' => %w{GET POST OPTIONS PATCH PUT DELETE}.join(","),
     #   # 'Access-Control-Allow-Methods' => '*',
     #   # 'Access-Control-Request-Method' => '*',
+    #   'Access-Control-Allow-Credentials' => 'true',
     #   'Access-Control-Request-Method' => %w{GET POST OPTIONS PATCH PUT DELETE}.join(","),
     #   'Access-Control-Allow-Headers' => 'Origin, X-Requested-With, Content-Type, Accept, Authorization'
+    #   'Access-Control-Request-Headers' => 'Origin, X-Requested-With, Content-Type, Accept, Authorization'
+
     # }
 
   
