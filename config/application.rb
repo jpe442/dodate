@@ -13,7 +13,7 @@ module Dodate
     
     config.middleware.insert_before 0, Rack::Cors do
       allow do
-        origins "localhost:8000"
+        origins "localhost:8000", "https://jpe442.github.io/dodateweb/#/"
         resource '*', :headers => :any, :credentials => true, :methods => [:get, :post, :options, :patch, :delete, :put]
       end
     end
